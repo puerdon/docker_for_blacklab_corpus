@@ -5,11 +5,6 @@ services:
     build:
       context: .
     ports:
-      - "8887:8080"
+      - "8888:8080"
     volumes:
-      - ./indexes:/data/blacklab/indexes
-        # blacklab-server-frontend:
-        #   build:
-        #     context: .
-        #   ports:
-        #     - "8886:8080"
+      - ${INDEX_PATH}:/data/blacklab/indexes
